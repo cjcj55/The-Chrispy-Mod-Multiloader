@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "minecraft:redstone_lamp",
+    "minecraft:cyan_dye"
+  ],
+  "result": {
+    "id": "chrispymod:cyan_redstone_lamp"
+  }
+}

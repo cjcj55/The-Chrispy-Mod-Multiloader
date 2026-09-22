@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "chrispymod:honey"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "chrispymod:honey"
+      }
+    ]
+  }
+}

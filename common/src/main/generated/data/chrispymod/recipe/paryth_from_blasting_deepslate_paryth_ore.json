@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.8,
+  "ingredient": "chrispymod:deepslate_paryth_ore",
+  "result": {
+    "id": "chrispymod:paryth"
+  }
+}

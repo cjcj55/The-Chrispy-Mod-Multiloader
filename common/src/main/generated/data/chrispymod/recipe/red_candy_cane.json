@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "chrispymod:sugar_block",
+    "minecraft:red_dye"
+  ],
+  "result": {
+    "id": "chrispymod:red_candy_cane"
+  }
+}

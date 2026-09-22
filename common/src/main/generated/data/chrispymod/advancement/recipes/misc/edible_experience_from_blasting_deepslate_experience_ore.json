@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_experience_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:deepslate_experience_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:edible_experience_from_blasting_deepslate_experience_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_experience_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:edible_experience_from_blasting_deepslate_experience_ore"
+    ]
+  }
+}

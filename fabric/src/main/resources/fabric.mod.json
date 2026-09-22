@@ -18,6 +18,12 @@
   "entrypoints": {
     "main": [
       "com.cjcj55.chrispymod.fabric.ChrispyModFabric"
+    ],
+    "client": [
+      "com.cjcj55.chrispymod.fabric.FabricClient"
+    ],
+    "jei_mod_plugin": [
+      "com.cjcj55.chrispymod.fabric.compat.FabricJeiPlugin"
     ]
   },
   "accessWidener": "${mod_id}.classtweaker",

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": "minecraft:honey_bottle"
+  },
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "result": {
+    "count": 4,
+    "id": "chrispymod:honey_stick"
+  }
+}

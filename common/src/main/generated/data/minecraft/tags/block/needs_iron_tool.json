@@ -1,0 +1,21 @@
+{
+  "values": [
+    "chrispymod:flame_block",
+    "chrispymod:flame_ore_nether",
+    "chrispymod:hellfire_ore_nether",
+    "chrispymod:hardened_redstone_block",
+    "chrispymod:alloy_furnace",
+    "chrispymod:natural_essence_ore",
+    "chrispymod:deepslate_natural_essence_ore",
+    "chrispymod:paryth_block",
+    "chrispymod:paryth_ore",
+    "chrispymod:deepslate_paryth_ore",
+    "chrispymod:ruby_block",
+    "chrispymod:ruby_ore",
+    "chrispymod:deepslate_ruby_ore",
+    "chrispymod:ruby_ore_nether",
+    "chrispymod:tangerine_block",
+    "chrispymod:tangerine_ore",
+    "chrispymod:deepslate_tangerine_ore"
+  ]
+}

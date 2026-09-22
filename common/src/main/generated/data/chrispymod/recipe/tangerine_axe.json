@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "minecraft:stick",
+    "M": "chrispymod:tangerine"
+  },
+  "pattern": [
+    "MM",
+    "MH",
+    " H"
+  ],
+  "result": {
+    "id": "chrispymod:tangerine_axe"
+  }
+}

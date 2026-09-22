@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_natural_essence_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:deepslate_natural_essence_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:natural_essence_from_blasting_deepslate_natural_essence_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_natural_essence_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:natural_essence_from_blasting_deepslate_natural_essence_ore"
+    ]
+  }
+}

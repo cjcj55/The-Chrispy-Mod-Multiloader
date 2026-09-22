@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chrispymod:wet_lava_sponge"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "chrispymod:blocks/wet_lava_sponge"
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hardened_redstone_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:hardened_redstone_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:redstone_ingot_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hardened_redstone_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:redstone_ingot_from_block"
+    ]
+  }
+}

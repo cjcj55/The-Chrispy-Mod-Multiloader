@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "minecraft:redstone_lamp",
+    "minecraft:pink_dye"
+  ],
+  "result": {
+    "id": "chrispymod:pink_redstone_lamp"
+  }
+}

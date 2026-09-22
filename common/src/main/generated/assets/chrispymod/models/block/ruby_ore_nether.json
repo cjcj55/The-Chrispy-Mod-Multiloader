@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chrispymod:block/ruby_ore_nether"
+  }
+}

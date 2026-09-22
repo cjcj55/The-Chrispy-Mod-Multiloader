@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opal_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:opal_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:opal_from_smelting_opal_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_opal_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:opal_from_smelting_opal_ore"
+    ]
+  }
+}

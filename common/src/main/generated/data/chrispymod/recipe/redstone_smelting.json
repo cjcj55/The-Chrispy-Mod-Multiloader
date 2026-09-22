@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 2.0,
+  "ingredient": "minecraft:redstone_block",
+  "result": {
+    "id": "chrispymod:redstone_ingot"
+  }
+}

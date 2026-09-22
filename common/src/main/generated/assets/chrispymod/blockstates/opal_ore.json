@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chrispymod:block/opal_ore"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "chrispymod:ruby_small_placed",
+    "chrispymod:ruby_large_placed",
+    "chrispymod:ruby_hidden_placed",
+    "chrispymod:opal_placed",
+    "chrispymod:opal_small_placed",
+    "chrispymod:tangerine_placed",
+    "chrispymod:tangerine_small_placed",
+    "chrispymod:cobalt_small_placed",
+    "chrispymod:cobalt_large_placed",
+    "chrispymod:cobalt_hidden_placed",
+    "chrispymod:paryth_placed",
+    "chrispymod:paryth_small_placed",
+    "chrispymod:white_dwarf_star_small_placed",
+    "chrispymod:white_dwarf_star_hidden_placed",
+    "chrispymod:natural_essence_hidden_placed",
+    "chrispymod:experience_placed",
+    "chrispymod:experience_hidden_placed"
+  ],
+  "step": "underground_ores"
+}

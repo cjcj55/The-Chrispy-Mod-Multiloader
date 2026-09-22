@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_paryth": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:paryth"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:paryth_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_paryth"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:paryth_axe"
+    ]
+  }
+}

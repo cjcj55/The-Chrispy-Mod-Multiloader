@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": "minecraft:honeycomb",
+    "H": "minecraft:honey_block"
+  },
+  "pattern": [
+    "H H",
+    "HCH",
+    "HHH"
+  ],
+  "result": {
+    "id": "chrispymod:honey_chestplate"
+  }
+}

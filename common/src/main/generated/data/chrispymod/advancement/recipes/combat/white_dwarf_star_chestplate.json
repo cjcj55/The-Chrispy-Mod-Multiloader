@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:white_dwarf_star_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_dwarf_star": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:white_dwarf_star"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_dwarf_star"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:white_dwarf_star_chestplate"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "ingredient": "minecraft:carrot",
+  "result": {
+    "id": "chrispymod:cooked_carrot"
+  }
+}

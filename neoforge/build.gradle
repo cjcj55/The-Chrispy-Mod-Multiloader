@@ -25,8 +25,18 @@ repositories {
         name = 'NeoForge'
         url = 'https://maven.neoforged.net/releases/'
     }
+    maven {
+        name = 'Blamejared'
+        url = 'https://maven.blamejared.com/'
+        content { includeGroup 'mezz.jei' }
+    }
 }
 
 dependencies {
     forgeUserdev "net.neoforged:neoforge:${project.neoforge_version}:userdev"
+
+    // Development only: JEI is loaded by runClient, but is not a dependency of the built mod.
+    localRuntime "mezz.jei:jei-${project.minecraft_version}-neoforge:${project.jei_version}"
+    // The JEI API is needed to compile the optional compat plugin; compileOnly keeps it out of the built jar.
+    compileOnly "mezz.jei:jei-${project.minecraft_version}-common-api:${project.jei_version}"
 }

@@ -1,0 +1,8 @@
+{
+  "type": "chrispymod:alloy_furnace",
+  "first": "minecraft:diamond",
+  "result": {
+    "id": "chrispymod:blue_emerald"
+  },
+  "second": "minecraft:emerald"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "chrispymod:nether_ruby_placed",
+    "chrispymod:nether_flame_placed",
+    "chrispymod:nether_hellfire_placed"
+  ],
+  "step": "underground_ores"
+}

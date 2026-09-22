@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "chrispymod:paryth"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "chrispymod:paryth"
+      }
+    ]
+  }
+}

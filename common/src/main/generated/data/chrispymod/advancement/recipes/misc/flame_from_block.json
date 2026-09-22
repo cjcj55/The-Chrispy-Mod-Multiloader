@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flame_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:flame_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:flame_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_flame_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:flame_from_block"
+    ]
+  }
+}

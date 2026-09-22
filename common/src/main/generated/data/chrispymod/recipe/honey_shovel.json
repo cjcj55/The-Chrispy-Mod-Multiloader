@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "chrispymod:honey_stick",
+    "M": "minecraft:honey_block"
+  },
+  "pattern": [
+    "M",
+    "H",
+    "H"
+  ],
+  "result": {
+    "id": "chrispymod:honey_shovel"
+  }
+}

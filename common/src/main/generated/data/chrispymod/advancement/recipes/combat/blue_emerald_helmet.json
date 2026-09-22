@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:blue_emerald"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:blue_emerald_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_emerald"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:blue_emerald_helmet"
+    ]
+  }
+}

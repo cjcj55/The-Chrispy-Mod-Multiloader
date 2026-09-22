@@ -2,7 +2,20 @@ plugins {
     id 'multiloader-loader'
 }
 
+repositories {
+    maven {
+        name = 'Blamejared'
+        url = 'https://maven.blamejared.com/'
+        content { includeGroup 'mezz.jei' }
+    }
+}
+
 dependencies {
     implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // Development only: JEI is loaded by runClient, but is not a dependency of the built mod.
+    localRuntime "mezz.jei:jei-${project.minecraft_version}-fabric:${project.jei_version}"
+    // The JEI API is needed to compile the optional compat plugin; compileOnly keeps it out of the built jar.
+    compileOnly "mezz.jei:jei-${project.minecraft_version}-common-api:${project.jei_version}"
 }

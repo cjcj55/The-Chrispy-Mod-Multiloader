@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "chrispymod:white_dwarf_star"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "chrispymod:white_dwarf_star"
+      }
+    ]
+  }
+}

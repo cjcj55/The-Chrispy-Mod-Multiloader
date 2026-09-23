@@ -2,6 +2,7 @@ package com.cjcj55.chrispymod.common.menu;
 
 import com.cjcj55.chrispymod.common.block.entity.AlloyFurnaceBlockEntity;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.util.Mth;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -57,18 +58,23 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
         return data.get(0) > 0;
     }
 
-    public int getScaledProgress() {
-        int progress = data.get(2);
-        int maxProgress = data.get(3);
-        int arrowWidth = 26;
-        return maxProgress != 0 && progress != 0 ? progress * arrowWidth / maxProgress : 0;
+    /** Fraction (0-1) of the current fuel's burn time remaining, matching vanilla's {@code AbstractFurnaceMenu}. */
+    public float getLitProgress() {
+        int litDuration = data.get(1);
+        if (litDuration == 0) {
+            litDuration = 200;
+        }
+        return Mth.clamp(data.get(0) / (float) litDuration, 0.0f, 1.0f);
     }
 
-    public int getScaledFuel() {
-        int litTime = data.get(0);
-        int litDuration = data.get(1);
-        int fuelHeight = 14;
-        return litDuration != 0 ? litTime * fuelHeight / litDuration : 0;
+    /** Fraction (0-1) of cooking progress toward the current recipe, matching vanilla's {@code AbstractFurnaceMenu}. */
+    public float getBurnProgress() {
+        int progress = data.get(2);
+        int maxProgress = data.get(3);
+        if (maxProgress == 0 || progress == 0) {
+            return 0.0f;
+        }
+        return Mth.clamp(progress / (float) maxProgress, 0.0f, 1.0f);
     }
 
     @Override

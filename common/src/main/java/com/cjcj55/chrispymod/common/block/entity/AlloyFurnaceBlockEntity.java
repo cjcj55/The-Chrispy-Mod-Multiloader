@@ -42,11 +42,14 @@ public class AlloyFurnaceBlockEntity extends BaseContainerBlockEntity {
     private static final int PROGRESS_PER_TICK = 1;
     private static final int PROGRESS_LOST_WHEN_IDLE = 2;
 
+    /** Every recipe currently takes the same fixed time; also referenced by the JEI compat for its cook-time display. */
+    public static final int COOK_TIME_TICKS = 300;
+
     private NonNullList<ItemStack> items = NonNullList.withSize(SLOT_COUNT, ItemStack.EMPTY);
     private int litTime;
     private int litDuration;
     private int progress;
-    private int maxProgress = 300;
+    private int maxProgress = COOK_TIME_TICKS;
 
     private final ContainerData data = new ContainerData() {
         @Override

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_prism_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:prism_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:prism_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_prism_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:prism_from_block"
+    ]
+  }
+}

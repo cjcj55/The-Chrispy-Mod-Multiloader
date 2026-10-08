@@ -10,6 +10,9 @@
     "chrispymod:flame_sword",
     "chrispymod:redstone_sword",
     "chrispymod:emerald_sword",
-    "chrispymod:honey_sword"
+    "chrispymod:honey_sword",
+    "chrispymod:stormfire_sword",
+    "chrispymod:voidsteel_sword",
+    "chrispymod:prism_sword"
   ]
 }

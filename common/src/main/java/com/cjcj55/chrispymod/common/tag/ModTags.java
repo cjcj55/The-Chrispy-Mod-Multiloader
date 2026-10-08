@@ -25,6 +25,9 @@ public final class ModTags {
         public static final TagKey<Item> EMERALD_REPAIRABLE = create("emerald_repairable");
         public static final TagKey<Item> HONEY_REPAIRABLE = create("honey_repairable");
         public static final TagKey<Item> WHITE_DWARF_STAR_REPAIRABLE = create("white_dwarf_star_repairable");
+        public static final TagKey<Item> STORMFIRE_REPAIRABLE = create("stormfire_repairable");
+        public static final TagKey<Item> VOIDSTEEL_REPAIRABLE = create("voidsteel_repairable");
+        public static final TagKey<Item> PRISM_REPAIRABLE = create("prism_repairable");
 
         private static TagKey<Item> create(String name) {
             return TagKey.create(Registries.ITEM, ChrispyMod.id(name));

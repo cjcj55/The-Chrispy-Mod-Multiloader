@@ -1,0 +1,8 @@
+{
+  "type": "chrispymod:alloy_furnace",
+  "first": "chrispymod:lightning",
+  "result": {
+    "id": "chrispymod:stormfire"
+  },
+  "second": "chrispymod:flame"
+}

@@ -28,6 +28,9 @@ public final class ModArmorMaterials {
     public static final ResourceKey<EquipmentAsset> EMERALD_ASSET = assetKey("emerald");
     public static final ResourceKey<EquipmentAsset> HONEY_ASSET = assetKey("honey");
     public static final ResourceKey<EquipmentAsset> WHITE_DWARF_STAR_ASSET = assetKey("white_dwarf_star");
+    public static final ResourceKey<EquipmentAsset> STORMFIRE_ASSET = assetKey("stormfire");
+    public static final ResourceKey<EquipmentAsset> VOIDSTEEL_ASSET = assetKey("voidsteel");
+    public static final ResourceKey<EquipmentAsset> PRISM_ASSET = assetKey("prism");
 
     // durability multiplier, defense (boots, leggings, chestplate, helmet, body), enchantability, equip sound, toughness, repair tag, asset
     public static final ArmorMaterial RUBY = new ArmorMaterial(15, defense(2, 5, 6, 2, 3), 14, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, ModTags.Items.RUBY_REPAIRABLE, RUBY_ASSET);
@@ -42,6 +45,11 @@ public final class ModArmorMaterials {
     public static final ArmorMaterial EMERALD = new ArmorMaterial(28, defense(3, 6, 7, 3, 3), 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, ModTags.Items.EMERALD_REPAIRABLE, EMERALD_ASSET);
     public static final ArmorMaterial HONEY = new ArmorMaterial(20, defense(1, 2, 3, 1, 1), 15, SoundEvents.ARMOR_EQUIP_TURTLE, 0f, 0f, ModTags.Items.HONEY_REPAIRABLE, HONEY_ASSET);
     public static final ArmorMaterial WHITE_DWARF_STAR = new ArmorMaterial(12, defense(2, 5, 6, 2, 2), 16, SoundEvents.ARMOR_EQUIP_NETHERITE, 0f, 0f, ModTags.Items.WHITE_DWARF_STAR_REPAIRABLE, WHITE_DWARF_STAR_ASSET);
+
+    // Alloy furnace fusions, below Blue Emerald's top tier
+    public static final ArmorMaterial STORMFIRE = new ArmorMaterial(26, defense(2, 6, 7, 3, 4), 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.5f, 0f, ModTags.Items.STORMFIRE_REPAIRABLE, STORMFIRE_ASSET);
+    public static final ArmorMaterial VOIDSTEEL = new ArmorMaterial(24, defense(2, 5, 7, 3, 4), 14, SoundEvents.ARMOR_EQUIP_NETHERITE, 1.0f, 0f, ModTags.Items.VOIDSTEEL_REPAIRABLE, VOIDSTEEL_ASSET);
+    public static final ArmorMaterial PRISM = new ArmorMaterial(14, defense(2, 5, 6, 2, 3), 20, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, ModTags.Items.PRISM_REPAIRABLE, PRISM_ASSET);
 
     private static ResourceKey<EquipmentAsset> assetKey(String name) {
         return ResourceKey.create(EquipmentAssets.ROOT_ID, ChrispyMod.id(name));

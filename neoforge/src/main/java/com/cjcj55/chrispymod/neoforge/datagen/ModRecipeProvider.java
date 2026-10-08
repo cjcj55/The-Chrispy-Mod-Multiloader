@@ -71,15 +71,13 @@ public class ModRecipeProvider extends RecipeProvider {
         gem(ModItems.FLAME, ModBlocks.FLAME_BLOCK, 1.0f, ModBlocks.FLAME_ORE_NETHER);
         gem(ModItems.BLUE_EMERALD, ModBlocks.BLUE_EMERALD_BLOCK, 0.0f);
         gem(ModItems.REDSTONE_INGOT, ModBlocks.HARDENED_REDSTONE_BLOCK, 0.0f);
+        gem(ModItems.STORMFIRE, ModBlocks.STORMFIRE_BLOCK, 0.0f);
+        gem(ModItems.VOIDSTEEL, ModBlocks.VOIDSTEEL_BLOCK, 0.0f);
+        gem(ModItems.PRISM, ModBlocks.PRISM_BLOCK, 0.0f);
         cookOres(ModItems.WHITE_DWARF_STAR, 1.0f, ModBlocks.WHITE_DWARF_STAR_ORE, ModBlocks.DEEPSLATE_WHITE_DWARF_STAR_ORE);
         cookOres(ModItems.NATURAL_ESSENCE, 1.0f, ModBlocks.NATURAL_ESSENCE_ORE, ModBlocks.DEEPSLATE_NATURAL_ESSENCE_ORE);
         cookOres(ModItems.EDIBLE_EXPERIENCE, 1.0f, ModBlocks.EXPERIENCE_ORE, ModBlocks.DEEPSLATE_EXPERIENCE_ORE);
         cookOres(ModItems.HELLFIRE, 0.2f, ModBlocks.HELLFIRE_ORE_NETHER);
-
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.REDSTONE_BLOCK), RecipeCategory.MISC, CookingBookCategory.MISC,
-                        ModItems.REDSTONE_INGOT, 2.0f, 300)
-                .unlockedBy(getHasName(Items.REDSTONE_BLOCK), has(Items.REDSTONE_BLOCK))
-                .save(output, id("redstone_smelting"));
 
         // Lightning: a gem made from iron and a diamond, and a block made from eight of them around glowstone.
         shaped(RecipeCategory.MISC, ModItems.LIGHTNING)
@@ -139,6 +137,12 @@ public class ModRecipeProvider extends RecipeProvider {
         tools(ModItems.EMERALD_TOOLS, Items.EMERALD, Items.STICK);
         armor(ModItems.EMERALD_ARMOR, Items.EMERALD);
         armor(ModItems.WHITE_DWARF_STAR_ARMOR, ModItems.WHITE_DWARF_STAR);
+        tools(ModItems.STORMFIRE_TOOLS, ModItems.STORMFIRE, Items.STICK);
+        armor(ModItems.STORMFIRE_ARMOR, ModItems.STORMFIRE);
+        tools(ModItems.VOIDSTEEL_TOOLS, ModItems.VOIDSTEEL, Items.STICK);
+        armor(ModItems.VOIDSTEEL_ARMOR, ModItems.VOIDSTEEL);
+        tools(ModItems.PRISM_TOOLS, ModItems.PRISM, Items.STICK);
+        armor(ModItems.PRISM_ARMOR, ModItems.PRISM);
 
         // Honey armor is made from honey blocks with honeycomb in the top row (and the middle of the chestplate).
         tools(ModItems.HONEY_TOOLS, Items.HONEY_BLOCK, ModItems.HONEY_STICK);
@@ -225,6 +229,11 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(output);
 
         alloyFurnaceRecipe("blue_emerald_alloying", Items.DIAMOND, Items.EMERALD, ModItems.BLUE_EMERALD, Items.EMERALD);
+        alloyFurnaceRecipe("redstone_ingot_alloying", Items.IRON_INGOT, Items.REDSTONE_BLOCK, ModItems.REDSTONE_INGOT, Items.REDSTONE_BLOCK);
+        alloyFurnaceRecipe("stormfire_alloying", ModItems.LIGHTNING, ModItems.FLAME, ModItems.STORMFIRE, ModItems.FLAME);
+        alloyFurnaceRecipe("voidsteel_alloying", ModItems.COBALT, ModItems.WHITE_DWARF_STAR, ModItems.VOIDSTEEL, ModItems.WHITE_DWARF_STAR);
+        alloyFurnaceRecipe("prism_alloying", ModItems.OPAL, ModItems.PARYTH, ModItems.PRISM, ModItems.PARYTH);
+        alloyFurnaceRecipe("glowing_honey_block_alloying", Items.HONEY_BLOCK, Items.GLOWSTONE_DUST, ModBlocks.GLOWING_HONEY_BLOCK, Items.GLOWSTONE_DUST);
     }
 
     private void alloyFurnaceRecipe(String path, ItemLike first, ItemLike second, ItemLike result, ItemLike unlockItem) {

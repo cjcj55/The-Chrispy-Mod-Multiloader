@@ -1,0 +1,8 @@
+{
+  "type": "chrispymod:alloy_furnace",
+  "first": "chrispymod:opal",
+  "result": {
+    "id": "chrispymod:prism"
+  },
+  "second": "chrispymod:paryth"
+}

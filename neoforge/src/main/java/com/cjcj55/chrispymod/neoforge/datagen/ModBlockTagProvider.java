@@ -24,7 +24,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         // Everything except the lamps, the sugar blocks and the sponges is mined with a pickaxe.
         for (Block block : ModBlocks.blocks().values()) {
             if (!(block instanceof RedstoneLampBlock) && block != ModBlocks.SUGAR_BLOCK && block != ModBlocks.SUGAR_CANE_BLOCK
-                    && block != ModBlocks.LAVA_SPONGE && block != ModBlocks.WET_LAVA_SPONGE) {
+                    && block != ModBlocks.LAVA_SPONGE && block != ModBlocks.WET_LAVA_SPONGE && block != ModBlocks.GLOWING_HONEY_BLOCK) {
                 tag(BlockTags.MINEABLE_WITH_PICKAXE).add(key(block));
             }
         }
@@ -39,12 +39,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 ModBlocks.NATURAL_ESSENCE_ORE, ModBlocks.DEEPSLATE_NATURAL_ESSENCE_ORE,
                 ModBlocks.PARYTH_BLOCK, ModBlocks.PARYTH_ORE, ModBlocks.DEEPSLATE_PARYTH_ORE,
                 ModBlocks.RUBY_BLOCK, ModBlocks.RUBY_ORE, ModBlocks.DEEPSLATE_RUBY_ORE, ModBlocks.RUBY_ORE_NETHER,
-                ModBlocks.TANGERINE_BLOCK, ModBlocks.TANGERINE_ORE, ModBlocks.DEEPSLATE_TANGERINE_ORE));
+                ModBlocks.TANGERINE_BLOCK, ModBlocks.TANGERINE_ORE, ModBlocks.DEEPSLATE_TANGERINE_ORE,
+                ModBlocks.PRISM_BLOCK));
 
         add(BlockTags.NEEDS_DIAMOND_TOOL, List.of(
                 ModBlocks.BLUE_EMERALD_BLOCK, ModBlocks.LIGHTNING_BLOCK,
                 ModBlocks.COBALT_BLOCK, ModBlocks.COBALT_ORE, ModBlocks.DEEPSLATE_COBALT_ORE,
-                ModBlocks.WHITE_DWARF_STAR_ORE, ModBlocks.DEEPSLATE_WHITE_DWARF_STAR_ORE));
+                ModBlocks.WHITE_DWARF_STAR_ORE, ModBlocks.DEEPSLATE_WHITE_DWARF_STAR_ORE,
+                ModBlocks.STORMFIRE_BLOCK, ModBlocks.VOIDSTEEL_BLOCK));
     }
 
     private void add(net.minecraft.tags.TagKey<Block> tag, List<Block> blocks) {

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "chrispymod:voidsteel_hoe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidsteel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:voidsteel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_voidsteel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chrispymod:voidsteel_hoe"
+    ]
+  }
+}

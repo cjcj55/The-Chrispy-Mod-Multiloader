@@ -42,6 +42,9 @@ public final class ModBlocks {
             .mapColor(MapColor.COLOR_LIGHT_BLUE).strength(8.5f, 40.0f).sound(SoundType.METAL).requiresCorrectToolForDrops().lightLevel(state -> 15)));
     public static final Block FLAME_BLOCK = metalBlock("flame_block", MapColor.COLOR_RED, 5.1f, 40.0f);
     public static final Block HARDENED_REDSTONE_BLOCK = metalBlock("hardened_redstone_block", MapColor.COLOR_RED, 3.2f, 18.0f);
+    public static final Block STORMFIRE_BLOCK = metalBlock("stormfire_block", MapColor.COLOR_RED, 7.0f, 45.0f);
+    public static final Block VOIDSTEEL_BLOCK = metalBlock("voidsteel_block", MapColor.COLOR_PURPLE, 6.5f, 40.0f);
+    public static final Block PRISM_BLOCK = metalBlock("prism_block", MapColor.COLOR_PINK, 5.0f, 30.0f);
 
     // Ores
     public static final Block RUBY_ORE = ore("ruby_ore", MapColor.COLOR_RED, 5.0f, 15.0f, 1, 3);
@@ -79,6 +82,8 @@ public final class ModBlocks {
             .mapColor(MapColor.FIRE).strength(0.6f).sound(SoundType.GRASS)));
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace", properties -> new AlloyFurnaceBlock(properties
             .mapColor(MapColor.COLOR_GRAY).strength(4.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block GLOWING_HONEY_BLOCK = registerBlock("glowing_honey_block", properties -> new Block(properties
+            .mapColor(MapColor.COLOR_YELLOW).strength(0.0f).sound(SoundType.HONEY_BLOCK).lightLevel(state -> 10)));
 
     // Bricks, in the order they appear in the creative tab
     public static final List<Block> BRICKS = new ArrayList<>();

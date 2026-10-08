@@ -47,6 +47,18 @@
     "chrispymod:white_dwarf_star_helmet",
     "chrispymod:white_dwarf_star_chestplate",
     "chrispymod:white_dwarf_star_leggings",
-    "chrispymod:white_dwarf_star_boots"
+    "chrispymod:white_dwarf_star_boots",
+    "chrispymod:stormfire_helmet",
+    "chrispymod:stormfire_chestplate",
+    "chrispymod:stormfire_leggings",
+    "chrispymod:stormfire_boots",
+    "chrispymod:voidsteel_helmet",
+    "chrispymod:voidsteel_chestplate",
+    "chrispymod:voidsteel_leggings",
+    "chrispymod:voidsteel_boots",
+    "chrispymod:prism_helmet",
+    "chrispymod:prism_chestplate",
+    "chrispymod:prism_leggings",
+    "chrispymod:prism_boots"
   ]
 }

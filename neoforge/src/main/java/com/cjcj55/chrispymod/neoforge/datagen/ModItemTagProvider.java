@@ -23,7 +23,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        for (Item gem : new Item[]{ModItems.RUBY, ModItems.OPAL, ModItems.COBALT, ModItems.BLUE_EMERALD, ModItems.WHITE_DWARF_STAR}) {
+        for (Item gem : new Item[]{ModItems.RUBY, ModItems.OPAL, ModItems.COBALT, ModItems.BLUE_EMERALD, ModItems.WHITE_DWARF_STAR,
+                ModItems.STORMFIRE, ModItems.VOIDSTEEL, ModItems.PRISM}) {
             tag(Tags.Items.GEMS).add(key(gem));
         }
 
@@ -40,6 +41,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         repairedBy(ModTags.Items.EMERALD_REPAIRABLE, Items.EMERALD);
         repairedBy(ModTags.Items.HONEY_REPAIRABLE, Items.HONEY_BLOCK);
         repairedBy(ModTags.Items.WHITE_DWARF_STAR_REPAIRABLE, ModItems.WHITE_DWARF_STAR);
+        repairedBy(ModTags.Items.STORMFIRE_REPAIRABLE, ModItems.STORMFIRE);
+        repairedBy(ModTags.Items.VOIDSTEEL_REPAIRABLE, ModItems.VOIDSTEEL);
+        repairedBy(ModTags.Items.PRISM_REPAIRABLE, ModItems.PRISM);
 
         // Vanilla tags that make enchanting, sweeping and similar mechanics recognise the tools and armor
         for (ModItems.ToolSet set : ModItems.toolSets()) {

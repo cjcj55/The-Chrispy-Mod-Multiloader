@@ -1,0 +1,8 @@
+{
+  "type": "chrispymod:alloy_furnace",
+  "first": "minecraft:honey_block",
+  "result": {
+    "id": "chrispymod:glowing_honey_block"
+  },
+  "second": "minecraft:glowstone_dust"
+}

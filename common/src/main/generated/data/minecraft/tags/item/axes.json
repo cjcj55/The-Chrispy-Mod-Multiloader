@@ -10,6 +10,9 @@
     "chrispymod:flame_axe",
     "chrispymod:redstone_axe",
     "chrispymod:emerald_axe",
-    "chrispymod:honey_axe"
+    "chrispymod:honey_axe",
+    "chrispymod:stormfire_axe",
+    "chrispymod:voidsteel_axe",
+    "chrispymod:prism_axe"
   ]
 }

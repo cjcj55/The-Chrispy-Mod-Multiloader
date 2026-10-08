@@ -10,6 +10,9 @@
     "chrispymod:flame_hoe",
     "chrispymod:redstone_hoe",
     "chrispymod:emerald_hoe",
-    "chrispymod:honey_hoe"
+    "chrispymod:honey_hoe",
+    "chrispymod:stormfire_hoe",
+    "chrispymod:voidsteel_hoe",
+    "chrispymod:prism_hoe"
   ]
 }

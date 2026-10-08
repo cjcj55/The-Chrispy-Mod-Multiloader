@@ -11,6 +11,9 @@
     "chrispymod:redstone_chestplate",
     "chrispymod:emerald_chestplate",
     "chrispymod:honey_chestplate",
-    "chrispymod:white_dwarf_star_chestplate"
+    "chrispymod:white_dwarf_star_chestplate",
+    "chrispymod:stormfire_chestplate",
+    "chrispymod:voidsteel_chestplate",
+    "chrispymod:prism_chestplate"
   ]
 }

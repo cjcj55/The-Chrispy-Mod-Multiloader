@@ -10,6 +10,9 @@
     "chrispymod:flame_pickaxe",
     "chrispymod:redstone_pickaxe",
     "chrispymod:emerald_pickaxe",
-    "chrispymod:honey_pickaxe"
+    "chrispymod:honey_pickaxe",
+    "chrispymod:stormfire_pickaxe",
+    "chrispymod:voidsteel_pickaxe",
+    "chrispymod:prism_pickaxe"
   ]
 }

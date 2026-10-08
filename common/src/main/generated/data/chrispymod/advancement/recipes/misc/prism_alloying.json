@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "has_paryth": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:paryth"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_paryth"
+    ]
+  ]
+}

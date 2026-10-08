@@ -1,0 +1,8 @@
+{
+  "type": "chrispymod:alloy_furnace",
+  "first": "chrispymod:cobalt",
+  "result": {
+    "id": "chrispymod:voidsteel"
+  },
+  "second": "chrispymod:white_dwarf_star"
+}

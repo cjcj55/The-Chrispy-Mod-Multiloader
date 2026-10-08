@@ -25,7 +25,10 @@ public class ModLanguageProvider extends LanguageProvider {
             "flame", "§4",
             "honey", "§6",
             "edible_experience", "§2",
-            "warp", "§5");
+            "warp", "§5",
+            "stormfire", "§6",
+            "voidsteel", "§5",
+            "prism", "§b");
 
     public ModLanguageProvider(PackOutput output) {
         super(output, ChrispyMod.MOD_ID, "en_us");

@@ -19,4 +19,9 @@ public final class ModToolMaterials {
     public static final ToolMaterial REDSTONE = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 6.0f, 2.0f, 14, ModTags.Items.REDSTONE_REPAIRABLE);
     public static final ToolMaterial EMERALD = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 550, 7.0f, 2.5f, 12, ModTags.Items.EMERALD_REPAIRABLE);
     public static final ToolMaterial HONEY = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 400, 4.0f, 1.5f, 15, ModTags.Items.HONEY_REPAIRABLE);
+
+    // Alloy furnace fusions, below Blue Emerald's top tier
+    public static final ToolMaterial STORMFIRE = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1100, 8.0f, 2.5f, 11, ModTags.Items.STORMFIRE_REPAIRABLE);
+    public static final ToolMaterial VOIDSTEEL = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 950, 7.5f, 2.5f, 13, ModTags.Items.VOIDSTEEL_REPAIRABLE);
+    public static final ToolMaterial PRISM = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 500, 5.0f, 1.5f, 22, ModTags.Items.PRISM_REPAIRABLE);
 }

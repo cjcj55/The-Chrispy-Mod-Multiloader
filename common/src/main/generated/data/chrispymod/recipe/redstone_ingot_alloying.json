@@ -1,0 +1,8 @@
+{
+  "type": "chrispymod:alloy_furnace",
+  "first": "minecraft:iron_ingot",
+  "result": {
+    "id": "chrispymod:redstone_ingot"
+  },
+  "second": "minecraft:redstone_block"
+}

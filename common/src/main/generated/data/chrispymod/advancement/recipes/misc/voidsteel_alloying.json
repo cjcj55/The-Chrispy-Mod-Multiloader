@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "has_white_dwarf_star": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chrispymod:white_dwarf_star"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_dwarf_star"
+    ]
+  ]
+}

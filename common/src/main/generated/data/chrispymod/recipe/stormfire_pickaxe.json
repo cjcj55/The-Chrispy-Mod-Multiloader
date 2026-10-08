@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "minecraft:stick",
+    "M": "chrispymod:stormfire"
+  },
+  "pattern": [
+    "MMM",
+    " H ",
+    " H "
+  ],
+  "result": {
+    "id": "chrispymod:stormfire_pickaxe"
+  }
+}

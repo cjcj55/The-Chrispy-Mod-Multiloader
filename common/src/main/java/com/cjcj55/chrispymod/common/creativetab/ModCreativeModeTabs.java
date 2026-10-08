@@ -49,9 +49,11 @@ public final class ModCreativeModeTabs {
         items(out, ModItems.RUBY, ModItems.OPAL, ModItems.TANGERINE, ModItems.COBALT, ModItems.BLUE_EMERALD,
                 ModItems.PARYTH, ModItems.LIGHTNING, ModItems.FLAME, ModItems.REDSTONE_INGOT);
         items(out, ModItems.WHITE_DWARF_STAR, ModItems.NATURAL_ESSENCE, ModItems.HELLFIRE, ModItems.EDIBLE_EXPERIENCE);
+        items(out, ModItems.STORMFIRE, ModItems.VOIDSTEEL, ModItems.PRISM);
         blocks(out, ModBlocks.RUBY_BLOCK, ModBlocks.OPAL_BLOCK, ModBlocks.TANGERINE_BLOCK, ModBlocks.COBALT_BLOCK,
                 ModBlocks.BLUE_EMERALD_BLOCK, ModBlocks.PARYTH_BLOCK, ModBlocks.LIGHTNING_BLOCK, ModBlocks.FLAME_BLOCK,
                 ModBlocks.HARDENED_REDSTONE_BLOCK);
+        blocks(out, ModBlocks.STORMFIRE_BLOCK, ModBlocks.VOIDSTEEL_BLOCK, ModBlocks.PRISM_BLOCK);
         blocks(out, ModBlocks.RUBY_ORE, ModBlocks.DEEPSLATE_RUBY_ORE, ModBlocks.RUBY_ORE_NETHER,
                 ModBlocks.OPAL_ORE, ModBlocks.DEEPSLATE_OPAL_ORE,
                 ModBlocks.TANGERINE_ORE, ModBlocks.DEEPSLATE_TANGERINE_ORE,
@@ -83,7 +85,8 @@ public final class ModCreativeModeTabs {
     }
 
     private static void decor(Consumer<Item> out) {
-        blocks(out, ModBlocks.SUGAR_BLOCK, ModBlocks.SUGAR_CANE_BLOCK, ModBlocks.LAVA_SPONGE, ModBlocks.WET_LAVA_SPONGE, ModBlocks.ALLOY_FURNACE);
+        blocks(out, ModBlocks.SUGAR_BLOCK, ModBlocks.SUGAR_CANE_BLOCK, ModBlocks.LAVA_SPONGE, ModBlocks.WET_LAVA_SPONGE,
+                ModBlocks.ALLOY_FURNACE, ModBlocks.GLOWING_HONEY_BLOCK);
         ModBlocks.BRICKS.forEach(brick -> out.accept(brick.asItem()));
         ModBlocks.REDSTONE_LAMPS.values().forEach(lamp -> out.accept(lamp.asItem()));
     }

@@ -66,6 +66,9 @@ public final class ModItems {
     public static final Item NATURAL_ESSENCE = registerItem("natural_essence", Item::new);
     public static final Item EDIBLE_EXPERIENCE = registerItem("edible_experience",
             properties -> new EdibleExperienceItem(properties.component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
+    public static final Item STORMFIRE = registerItem("stormfire", Item::new);
+    public static final Item VOIDSTEEL = registerItem("voidsteel", Item::new);
+    public static final Item PRISM = registerItem("prism", Item::new);
 
     // Food
     public static final Item HONEY_STICK = registerItem("honey_stick",
@@ -113,6 +116,17 @@ public final class ModItems {
             properties -> setBonusHelmet(properties, ModArmorMaterials.HONEY_ASSET, new MobEffectInstance(MobEffects.REGENERATION, SET_BONUS_EFFECT_TICKS, 0, false, false)));
     public static final ArmorSet WHITE_DWARF_STAR_ARMOR = registerArmorSet("white_dwarf_star", ModArmorMaterials.WHITE_DWARF_STAR,
             properties -> setBonusHelmet(properties, ModArmorMaterials.WHITE_DWARF_STAR_ASSET, new MobEffectInstance(MobEffects.SPEED, SET_BONUS_EFFECT_TICKS, 2, false, false)));
+
+    // Alloy furnace fusions
+    public static final ToolSet STORMFIRE_TOOLS = registerToolSet("stormfire", ModToolMaterials.STORMFIRE, Item::new);
+    public static final ArmorSet STORMFIRE_ARMOR = registerArmorSet("stormfire", ModArmorMaterials.STORMFIRE,
+            properties -> setBonusHelmet(properties, ModArmorMaterials.STORMFIRE_ASSET, new MobEffectInstance(MobEffects.HASTE, SET_BONUS_EFFECT_TICKS, 1, false, false)));
+    public static final ToolSet VOIDSTEEL_TOOLS = registerToolSet("voidsteel", ModToolMaterials.VOIDSTEEL, Item::new);
+    public static final ArmorSet VOIDSTEEL_ARMOR = registerArmorSet("voidsteel", ModArmorMaterials.VOIDSTEEL,
+            properties -> setBonusHelmet(properties, ModArmorMaterials.VOIDSTEEL_ASSET, new MobEffectInstance(MobEffects.NIGHT_VISION, SET_BONUS_EFFECT_TICKS, 0, false, false)));
+    public static final ToolSet PRISM_TOOLS = registerToolSet("prism", ModToolMaterials.PRISM, Item::new);
+    public static final ArmorSet PRISM_ARMOR = registerArmorSet("prism", ModArmorMaterials.PRISM,
+            properties -> setBonusHelmet(properties, ModArmorMaterials.PRISM_ASSET, new MobEffectInstance(MobEffects.LUCK, SET_BONUS_EFFECT_TICKS, 1, false, false)));
 
     public static List<ToolSet> toolSets() {
         return Collections.unmodifiableList(TOOL_SETS);

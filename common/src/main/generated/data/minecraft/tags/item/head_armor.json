@@ -11,6 +11,9 @@
     "chrispymod:redstone_helmet",
     "chrispymod:emerald_helmet",
     "chrispymod:honey_helmet",
-    "chrispymod:white_dwarf_star_helmet"
+    "chrispymod:white_dwarf_star_helmet",
+    "chrispymod:stormfire_helmet",
+    "chrispymod:voidsteel_helmet",
+    "chrispymod:prism_helmet"
   ]
 }

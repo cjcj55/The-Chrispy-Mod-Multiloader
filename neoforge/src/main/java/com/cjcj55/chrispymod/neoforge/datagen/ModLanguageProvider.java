@@ -24,7 +24,8 @@ public class ModLanguageProvider extends LanguageProvider {
             "lightning", "§e",
             "flame", "§4",
             "honey", "§6",
-            "edible_experience", "§2");
+            "edible_experience", "§2",
+            "warp", "§5");
 
     public ModLanguageProvider(PackOutput output) {
         super(output, ChrispyMod.MOD_ID, "en_us");
@@ -34,6 +35,11 @@ public class ModLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add(ModCreativeModeTabs.ITEM_TAB_TITLE_KEY, "Chrispy Mod");
         add("container." + ChrispyMod.MOD_ID + ".alloy_furnace", "Alloy Furnace");
+        add("item." + ChrispyMod.MOD_ID + ".warp_wand.tooltip.bind", "Shift + Right-Click: Set or clear warp point");
+        add("item." + ChrispyMod.MOD_ID + ".warp_wand.tooltip.teleport", "Right-Click: Teleport to warp point, or forward if none set");
+        add("item." + ChrispyMod.MOD_ID + ".warp_wand.bound", "Warp point set.");
+        add("item." + ChrispyMod.MOD_ID + ".warp_wand.unbound", "Warp point cleared.");
+        add("item." + ChrispyMod.MOD_ID + ".warp_wand.recharging", "The Warp Wand is still recharging.");
         for (Identifier id : BuiltInRegistries.ITEM.keySet()) {
             if (id.getNamespace().equals(ChrispyMod.MOD_ID)) {
                 Item item = BuiltInRegistries.ITEM.getValue(id);

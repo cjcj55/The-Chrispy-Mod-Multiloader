@@ -14,7 +14,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
 public class LightningWandItem extends Item {
-    private static final int COOLDOWN_TICKS = 20;
+    private static final int COOLDOWN_TICKS = 40;
     private static final double RANGE = 64.0;
 
     public LightningWandItem(Properties properties) {

@@ -74,7 +74,7 @@ public final class ModCreativeModeTabs {
             ModItems.armorSets().stream().filter(set -> set.material().equals(material)).forEach(set ->
                     items(out, set.helmet(), set.chestplate(), set.leggings(), set.boots()));
         }
-        items(out, ModItems.LIGHTNING_WAND, ModItems.FLAME_WAND);
+        items(out, ModItems.LIGHTNING_WAND, ModItems.FLAME_WAND, ModItems.WARP_WAND);
     }
 
     private static void food(Consumer<Item> out) {

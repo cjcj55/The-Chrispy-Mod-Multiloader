@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": "chrispymod:lightning",
+    "N": "chrispymod:natural_essence",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "NLN",
+    " S "
+  ],
+  "result": {
+    "id": "chrispymod:lightning_wand"
+  }
+}

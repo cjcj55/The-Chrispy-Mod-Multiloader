@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": "chrispymod:flame",
+    "N": "chrispymod:natural_essence",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "NFN",
+    " S "
+  ],
+  "result": {
+    "id": "chrispymod:flame_wand"
+  }
+}

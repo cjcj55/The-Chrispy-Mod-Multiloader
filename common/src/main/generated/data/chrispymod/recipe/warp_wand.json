@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": "minecraft:ender_pearl",
+    "N": "chrispymod:natural_essence",
+    "P": "chrispymod:paryth",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "NPN",
+    " E ",
+    " S "
+  ],
+  "result": {
+    "id": "chrispymod:warp_wand"
+  }
+}

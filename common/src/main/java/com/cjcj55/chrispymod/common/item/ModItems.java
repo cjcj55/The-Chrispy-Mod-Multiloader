@@ -8,6 +8,7 @@ import com.cjcj55.chrispymod.common.item.custom.FlameWandItem;
 import com.cjcj55.chrispymod.common.item.custom.LightningSwordItem;
 import com.cjcj55.chrispymod.common.item.custom.LightningWandItem;
 import com.cjcj55.chrispymod.common.item.custom.SetBonusArmorItem;
+import com.cjcj55.chrispymod.common.item.custom.WarpWandItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -83,6 +84,7 @@ public final class ModItems {
     // Wands
     public static final Item LIGHTNING_WAND = registerItem("lightning_wand", properties -> new LightningWandItem(properties.durability(64)));
     public static final Item FLAME_WAND = registerItem("flame_wand", properties -> new FlameWandItem(properties.durability(64)));
+    public static final Item WARP_WAND = registerItem("warp_wand", properties -> new WarpWandItem(properties.durability(64)));
 
     // Tools and armor
     public static final ToolSet RUBY_TOOLS = registerToolSet("ruby", ModToolMaterials.RUBY, Item::new);

@@ -56,6 +56,7 @@ public class ModRecipeProvider extends RecipeProvider {
     protected void buildRecipes() {
         gemsAndOres();
         toolsAndArmor();
+        wands();
         food();
         blocks();
         machines();
@@ -95,6 +96,25 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(ModBlocks.LIGHTNING_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.LIGHTNING_BLOCK), has(ModBlocks.LIGHTNING_BLOCK))
                 .save(output, id("lightning_from_block"));
+    }
+
+    private void wands() {
+        shaped(RecipeCategory.TOOLS, ModItems.LIGHTNING_WAND)
+                .pattern("NLN").pattern(" S ")
+                .define('N', ModItems.NATURAL_ESSENCE).define('L', ModItems.LIGHTNING).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LIGHTNING), has(ModItems.LIGHTNING))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, ModItems.FLAME_WAND)
+                .pattern("NFN").pattern(" S ")
+                .define('N', ModItems.NATURAL_ESSENCE).define('F', ModItems.FLAME).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.FLAME), has(ModItems.FLAME))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, ModItems.WARP_WAND)
+                .pattern("NPN").pattern(" E ").pattern(" S ")
+                .define('N', ModItems.NATURAL_ESSENCE).define('P', ModItems.PARYTH)
+                .define('E', Items.ENDER_PEARL).define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PARYTH), has(ModItems.PARYTH))
+                .save(output);
     }
 
     private void toolsAndArmor() {

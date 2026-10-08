@@ -52,7 +52,7 @@ public class ModModelProvider extends ModelProvider {
                 specialModels.add(tool);
             }
         }
-        for (Item wand : new Item[]{ModItems.LIGHTNING_WAND, ModItems.FLAME_WAND}) {
+        for (Item wand : new Item[]{ModItems.LIGHTNING_WAND, ModItems.FLAME_WAND, ModItems.WARP_WAND}) {
             itemModels.generateFlatItem(wand, ModelTemplates.FLAT_HANDHELD_ITEM);
             specialModels.add(wand);
         }
